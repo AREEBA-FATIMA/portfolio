@@ -12,19 +12,23 @@
     rel="stylesheet" />
   <style>
     [data-theme="dark"] {
-      --bg: #131313;
-      --bg2: #1a1a1a;
-      --bg3: #202020;
-      --bg4: #282828;
+      --bg: #121412;
+      --bg2: #181b18;
+      --bg3: #1e221e;
+      --bg4: #262b26;
       --line: rgba(255, 255, 255, 0.07);
       --line2: rgba(255, 255, 255, 0.13);
-      --text: #f0eee8;
-      --muted: #666;
-      --muted2: #999;
-      --card-bg: #1a1a1a;
+      --text: #ecede8;
+      --muted: #6b6f68;
+      --muted2: #9a9e96;
+      --card-bg: #1a1d1a;
       --card-border: rgba(255, 255, 255, 0.07);
-      --nav-bg: rgba(19, 19, 19, .82);
-      --tog-bg: #2a2a2a;
+      --nav-bg: rgba(18, 20, 18, .82);
+      --tog-bg: #262b26;
+      --accent: #9db17c;
+      --a2: #b5c79a;
+      --a3: #5f7344;
+      --on-accent: #121412;
     }
 
     [data-theme="light"] {
@@ -41,15 +45,16 @@
       --card-border: rgba(0, 0, 0, 0.08);
       --nav-bg: rgba(245, 244, 240, .88);
       --tog-bg: #e8e6e1;
+      --accent: #5a6e3c;
+      --a2: #6f8550;
+      --a3: #4a5c30;
+      --on-accent: #ffffff;
     }
 
     :root {
-      --accent: #a78bfa;
-      --a2: #c4b5fd;
-      --a3: #7c3aed;
-      --glow: rgba(167, 139, 250, .2);
+      --glow: rgba(157, 177, 124, .2);
       --green: #059669;
-      --gold: #d97706;
+      --gold: #c8963e;
       --r: 10px;
     }
 
@@ -96,7 +101,7 @@
     .cring {
       width: 30px;
       height: 30px;
-      border: 1.5px solid rgba(167, 139, 250, .45);
+      border: 1.5px solid rgba(157, 177, 124, .45);
       border-radius: 50%;
       position: fixed;
       z-index: 9998;
@@ -222,8 +227,8 @@
 
     .navcta {
       padding: 8px 18px;
-      background: rgba(167, 139, 250, .1);
-      border: 1px solid rgba(167, 139, 250, .3);
+      background: rgba(157, 177, 124, .1);
+      border: 1px solid rgba(157, 177, 124, .3);
       border-radius: 7px;
       font-size: 12px;
       font-weight: 600;
@@ -234,7 +239,7 @@
     }
 
     .navcta:hover {
-      background: rgba(167, 139, 250, .2);
+      background: rgba(157, 177, 124, .2);
       transform: translateY(-1px);
     }
 
@@ -258,7 +263,7 @@
     .b1 {
       width: 480px;
       height: 480px;
-      background: rgba(124, 58, 237, .11);
+      background: rgba(95, 115, 68, .11);
       top: -80px;
       right: 40px;
     }
@@ -266,17 +271,17 @@
     .b2 {
       width: 320px;
       height: 320px;
-      background: rgba(167, 139, 250, .07);
+      background: rgba(157, 177, 124, .07);
       bottom: 60px;
       left: -60px;
     }
 
     [data-theme="light"] .b1 {
-      background: rgba(124, 58, 237, .07);
+      background: rgba(95, 115, 68, .07);
     }
 
     [data-theme="light"] .b2 {
-      background: rgba(167, 139, 250, .05);
+      background: rgba(157, 177, 124, .05);
     }
 
     .hero-l {
@@ -376,7 +381,7 @@
 
     .btn-fill {
       background: var(--accent);
-      color: #fff;
+      color: var(--on-accent);
     }
 
     .btn-fill:hover {
@@ -398,13 +403,13 @@
     }
 
     .btn-cv {
-      border: 1px solid rgba(167, 139, 250, .4);
+      border: 1px solid rgba(157, 177, 124, .4);
       color: var(--accent);
-      background: rgba(167, 139, 250, .08);
+      background: rgba(157, 177, 124, .08);
     }
 
     .btn-cv:hover {
-      background: rgba(167, 139, 250, .18);
+      background: rgba(157, 177, 124, .18);
       transform: translateY(-2px);
     }
 
@@ -535,7 +540,7 @@
     }
 
     .mwrap {
-      background: linear-gradient(90deg, var(--a3), #5b21b6);
+      background: linear-gradient(90deg, #3e4c2c, #56693b);
       padding: 13px 0;
       overflow: hidden;
     }
@@ -678,7 +683,7 @@
     }
 
     .ic:hover {
-      border-color: rgba(167, 139, 250, .3);
+      border-color: rgba(157, 177, 124, .3);
       transform: translateX(4px);
     }
 
@@ -717,7 +722,7 @@
       top: 8px;
       bottom: 8px;
       width: 1.5px;
-      background: linear-gradient(to bottom, var(--accent), rgba(167, 139, 250, .05));
+      background: linear-gradient(to bottom, var(--accent), rgba(157, 177, 124, .05));
     }
 
     .exp-item {
@@ -738,12 +743,12 @@
       border-radius: 50%;
       background: var(--accent);
       border: 2px solid var(--bg);
-      box-shadow: 0 0 0 3px rgba(167, 139, 250, .25);
+      box-shadow: 0 0 0 3px rgba(157, 177, 124, .25);
     }
 
     .exp-dot.gold {
       background: var(--gold);
-      box-shadow: 0 0 0 3px rgba(217, 119, 6, .25);
+      box-shadow: 0 0 0 3px rgba(200, 150, 62, .25);
     }
 
     .exp-card {
@@ -755,7 +760,7 @@
     }
 
     .exp-card:hover {
-      border-color: rgba(167, 139, 250, .3);
+      border-color: rgba(157, 177, 124, .3);
     }
 
     .exp-top {
@@ -777,8 +782,8 @@
       font-size: 11px;
       font-weight: 600;
       color: var(--accent);
-      background: rgba(167, 139, 250, .1);
-      border: 1px solid rgba(167, 139, 250, .25);
+      background: rgba(157, 177, 124, .1);
+      border: 1px solid rgba(157, 177, 124, .25);
       padding: 4px 10px;
       border-radius: 100px;
       white-space: nowrap;
@@ -792,8 +797,8 @@
 
     .exp-period.gold-p {
       color: var(--gold);
-      background: rgba(217, 119, 6, .08);
-      border-color: rgba(217, 119, 6, .3);
+      background: rgba(200, 150, 62, .08);
+      border-color: rgba(200, 150, 62, .3);
     }
 
     .exp-company {
@@ -816,8 +821,8 @@
       align-items: center;
       gap: 5px;
       padding: 3px 9px;
-      background: rgba(217, 119, 6, .1);
-      border: 1px solid rgba(217, 119, 6, .3);
+      background: rgba(200, 150, 62, .1);
+      border: 1px solid rgba(200, 150, 62, .3);
       border-radius: 100px;
       font-size: 10px;
       font-weight: 700;
@@ -839,7 +844,7 @@
 
     .etag {
       padding: 4px 10px;
-      background: rgba(167, 139, 250, .06);
+      background: rgba(157, 177, 124, .06);
       border: 1px solid var(--line);
       border-radius: 4px;
       font-size: 11px;
@@ -861,7 +866,7 @@
     }
 
     .sk:hover {
-      border-color: rgba(167, 139, 250, .3);
+      border-color: rgba(157, 177, 124, .3);
       background: var(--bg3);
     }
 
@@ -876,7 +881,7 @@
       width: 34px;
       height: 34px;
       border-radius: 8px;
-      background: rgba(167, 139, 250, .12);
+      background: rgba(157, 177, 124, .12);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -897,7 +902,7 @@
 
     .sp {
       padding: 4px 9px;
-      background: rgba(167, 139, 250, .06);
+      background: rgba(157, 177, 124, .06);
       border: 1px solid var(--line);
       border-radius: 4px;
       font-size: 11px;
@@ -907,8 +912,8 @@
     .aistrip {
       margin-top: 10px;
       padding: 18px 22px;
-      background: linear-gradient(135deg, rgba(124, 58, 237, .1), rgba(167, 139, 250, .04));
-      border: 1px solid rgba(167, 139, 250, .2);
+      background: linear-gradient(135deg, rgba(95, 115, 68, .1), rgba(157, 177, 124, .04));
+      border: 1px solid rgba(157, 177, 124, .2);
       border-radius: var(--r);
       display: flex;
       align-items: center;
@@ -930,7 +935,7 @@
       align-items: center;
       gap: 6px;
       padding: 6px 14px;
-      border: 1px solid rgba(167, 139, 250, .28);
+      border: 1px solid rgba(157, 177, 124, .28);
       border-radius: 6px;
       font-size: 12px;
       font-weight: 500;
@@ -952,7 +957,7 @@
     }
 
     .pc:hover {
-      border-color: rgba(167, 139, 250, .35);
+      border-color: rgba(157, 177, 124, .35);
       transform: translateY(-5px);
       box-shadow: 0 20px 56px rgba(0, 0, 0, .12);
     }
@@ -1032,8 +1037,8 @@
       font-weight: 700;
       letter-spacing: .06em;
       text-transform: uppercase;
-      background: rgba(167, 139, 250, .1);
-      border: 1px solid rgba(167, 139, 250, .3);
+      background: rgba(157, 177, 124, .1);
+      border: 1px solid rgba(157, 177, 124, .3);
       color: var(--accent);
       white-space: nowrap;
     }
@@ -1045,8 +1050,8 @@
       font-weight: 700;
       letter-spacing: .06em;
       text-transform: uppercase;
-      background: rgba(217, 119, 6, .08);
-      border: 1px solid rgba(217, 119, 6, .25);
+      background: rgba(200, 150, 62, .08);
+      border: 1px solid rgba(200, 150, 62, .25);
       color: var(--gold);
       white-space: nowrap;
     }
@@ -1058,8 +1063,8 @@
       font-weight: 700;
       letter-spacing: .06em;
       text-transform: uppercase;
-      background: rgba(217, 119, 6, .12);
-      border: 1px solid rgba(217, 119, 6, .4);
+      background: rgba(200, 150, 62, .12);
+      border: 1px solid rgba(200, 150, 62, .4);
       color: var(--gold);
       white-space: nowrap;
       display: inline-flex;
@@ -1091,7 +1096,7 @@
     }
 
     .mod.hot {
-      border-color: rgba(167, 139, 250, .35);
+      border-color: rgba(157, 177, 124, .35);
       color: var(--accent);
     }
 
@@ -1104,7 +1109,7 @@
 
     .stk {
       padding: 4px 10px;
-      border: 1px solid rgba(167, 139, 250, .22);
+      border: 1px solid rgba(157, 177, 124, .22);
       border-radius: 5px;
       font-size: 11px;
       color: var(--accent);
@@ -1131,7 +1136,7 @@
     }
 
     .pl-gh {
-      background: rgba(167, 139, 250, .05);
+      background: rgba(157, 177, 124, .05);
       border: 1px solid var(--line2);
       color: var(--muted2);
     }
@@ -1142,13 +1147,13 @@
     }
 
     .pl-live {
-      background: rgba(167, 139, 250, .12);
-      border: 1px solid rgba(167, 139, 250, .3);
+      background: rgba(157, 177, 124, .12);
+      border: 1px solid rgba(157, 177, 124, .3);
       color: var(--accent);
     }
 
     .pl-live:hover {
-      background: rgba(167, 139, 250, .22);
+      background: rgba(157, 177, 124, .22);
     }
 
     .svcrow {
@@ -1233,7 +1238,7 @@
     }
 
     .ec:hover {
-      border-color: rgba(167, 139, 250, .25);
+      border-color: rgba(157, 177, 124, .25);
     }
 
     .ec:hover::before {
@@ -1319,7 +1324,7 @@
       border-color: var(--accent);
       color: var(--accent);
       transform: translateY(-2px);
-      background: rgba(167, 139, 250, .06);
+      background: rgba(157, 177, 124, .06);
     }
 
     footer {
@@ -1425,10 +1430,10 @@
     <div class="nav-right">
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <div class="knob"></div>
-        <svg class="moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.5">
+        <svg class="moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#9db17c" stroke-width="2.5">
           <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
         </svg>
-        <svg class="sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5">
+        <svg class="sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#c8963e" stroke-width="2.5">
           <circle cx="12" cy="12" r="5" />
           <line x1="12" y1="1" x2="12" y2="3" />
           <line x1="12" y1="21" x2="12" y2="23" />
